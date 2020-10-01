@@ -1,0 +1,18 @@
+<div style="text-align: center;">
+  <h1>Event Details</h1>
+</div>
+
+<ag-grid-angular
+    #agGrid
+    style="width: 100%; height: 520px;"
+    class="ag-theme-alpine"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowModelType]="rowModelType"
+    [pagination]="true"
+    [paginationPageSize]="paginationPageSize"
+    [cacheBlockSize]="cacheBlockSize"
+    [animateRows]="true"
+    [rowData]="rowData"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular>
